@@ -2,10 +2,12 @@ html(lang="en")
     head
         meta(charset="utf-8")
         title Brad Walker - UI/UX Developer and Designer
-        link(rel="stylesheet", type="text/css", href="/css/app.css")
-        script(type="text/javascript", src="/js/app.js")
+        include includes/head-dev
     body
-        head
+        header
+            .title
+                h2 Brad Walker
+                span.tagline UI/UX Developer
             ul.nav
                 li
                     a(href="/index.html") Home
@@ -14,3 +16,5 @@ html(lang="en")
                 li
                     a(href="/contact.html") Contact Me
         block content
+        footer
+            include includes/scripts
